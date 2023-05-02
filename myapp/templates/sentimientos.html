@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle text-center">
+    <div>
+        <form action="{% url 'predecir' %}" method="POST">
+            {% csrf_token %}
+            <label class="form-label color-text text-size" for="com-res">Comentario</label>
+            <textarea 
+                class="form-control" 
+                name="comentario" 
+                id="com-res" 
+                cols="30" 
+                rows="10"
+                placeholder="La comida..." ></textarea>
+            <button class="mt-3 btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

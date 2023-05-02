@@ -1,0 +1,22 @@
+.max-cont {
+    width: 600px;
+}
+
+.body-image {
+    background-image: url('./pexels-chan-walrus-941861.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+
+.color-text {
+    color: white;
+}
+
+.text-size{
+    font-size: 25px;
+}
+
+.navbar-color{
+    background-color: #de2f2c !important;
+}

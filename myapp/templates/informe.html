@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle text-center">
+    <form>
+        <label class="form-label color-text text-size" for="com-res">Predicción</label>
+        <textarea class="form-control text-size" name="comentario" id="com-res" cols="30" rows="3"
+            readonly>{{resul}}</textarea>
+    </form>
+</div>
+
+{% endblock %}
