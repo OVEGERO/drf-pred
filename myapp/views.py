@@ -7,9 +7,6 @@ from django.http import JsonResponse
 
 # Create your views here.
 
-def determinarSentimiento(request):
-    return render(request, 'sentimientos.html')
-
 @api_view(['GET', 'POST'])
 def predecir(request):
     try:
@@ -39,3 +36,12 @@ def predecirIOJson(request):
     resp = JsonResponse(data)
     resp['Access-Control-Allow-Origin'] = '*'
     return resp
+
+def home(request):
+    return render(request, 'Pages/home.html')
+
+def preguntas(request):
+    return render(request, 'Pages/preguntas.html')
+
+def sobre(request):
+    return render(request, 'Pages/sobre.html')

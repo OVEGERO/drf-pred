@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container color-text">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4">Sobre nosotros</h1>
+          <p class="lead mb-0 color-text">Una demo de está página</p>
+          <p class="lead color-text">Enlace a la página principal: <a href="{% url 'home' %}" class="color-text"> 
+                      <u>Home</u></a>
+          </p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block"><img src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

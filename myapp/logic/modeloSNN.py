@@ -6,7 +6,7 @@ from keras.utils import pad_sequences
 class modeloSNN():
 
     def cargarRNN(self, nombreArchivo):
-        ruta = 'D:\\Universidad\\Aprendizaje Automatico\\sentimientos-env\\resources'
+        ruta = '/app/resources'
         nombre_archivo = nombreArchivo + '.h5'
         ruta_archivo = os.path.join(ruta, nombre_archivo)
         modelo = load_model(ruta_archivo)
@@ -14,7 +14,7 @@ class modeloSNN():
         return modelo
 
     def cargarTokenizer(self, nombreArchivo):
-        ruta = 'D:\\Universidad\\Aprendizaje Automatico\\sentimientos-env\\resources'
+        ruta = '/app/resources'
         nombre_archivo = nombreArchivo + '.pickle'
         ruta_archivo = os.path.join(ruta, nombre_archivo)
         with open(ruta_archivo, 'rb') as handle:
